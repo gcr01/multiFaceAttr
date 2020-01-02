@@ -1,0 +1,54 @@
+.
+├── code		#项目代码
+│   ├── data_process		#数据处理的代码，将图片数据和标签数据存在一个列表中，保存为npy文件
+│   └── utils			#项目的功能性代码文件，包含模型训练、模型测试、网络搭建、数据读入、Demo展示等功能的代码
+├── data		#npy格式数据集存储位置
+│   ├── afad-full		#提取了afad-full数据集中15-17岁的图片数据和年龄标签所做的年龄数据集，用来补充年龄段中teen属性的数据
+│   ├── afad-lite		#提取了afad-lite数据集中所有的图片数据和性别标签所做的性别数据集，用来补充性别数据集中的亚洲人的性别数据
+│   ├── CelebA_color		#提取了CelebA数据集中的部分图片，分别做成眼镜数据集，微笑数据集，性别数据集
+│   ├── megaage_asian_color	#提取了megaAge_asian数据集中的所有图片数据和年龄标签，做成了年龄段数据集
+│   ├── RFW_color		#提取RFW数据集中所有图片和人种标签做成人种数据集
+│   ├── Scut			#提取SCUT数据集中所有图片和颜值评分标签做成颜值数据集
+│   └── testAge			#提取网上爬取的网图作为年龄测试集
+├── doc			#项目文档
+│
+├── log			#模型训练实验日志
+│   ├── 4task1020.log
+│   ├── 4task.log
+│   ├── 4task_part.log
+│   ├── 4tasks1017.log
+│   ├── 4task_weight.log
+│   ├── 5task_focal.log
+│   ├── 5tasks_afadgender.log
+│   ├── 5tasks_l2.log
+│   ├── 5tasks.log
+│   ├── afad.log
+│   ├── age1009.log
+│   ├── age1011.log
+│   ├── age_focalloss_1025.log
+│   ├── ageModelInformation.txt
+│   ├── ageUtk1012.log
+│   ├── ageUtk_crop1012.log
+│   ├── beauty_scut.log
+│   ├── ethnic_eval_utkModel.log
+│   ├── imdb_oversampling_1016.log
+│   ├── imdb_utk_1018.log
+│   ├── imdb_utkwhole1.log
+│   ├── imdb_utkwhole.log
+│   ├── load_ageChecked.log
+│   ├── load_RAF_compound.log
+│   ├── load_RAF.log
+│   ├── load_UTK.log
+│   ├── megaage.log
+│   ├── teen_estop.log
+│   └── weight_smile_l2.log
+├── save		#模型文件保存位置
+│   ├── backup			#模型备份
+│   ├── current			#多任务学习模型(现为5任务)
+│   ├── current2		#年龄模型(0-70岁,int)
+│   └── current3		#颜值模型(1-5分,int)
+├── summary		#tensorboard可视化所需文件保存位置
+│   ├── summary1		#多任务学习模型训练曲线可视化文件保存位置
+│   ├── summary2		#年龄模型训练曲线可视化文件保存位置
+│   └── summary3		#颜值模型训练曲线可视化文件保存位置
+└── tree.txt		#项目文件结构
