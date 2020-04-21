@@ -1,5 +1,5 @@
 # multiFaceAttr
-For more information please visit my articles on my [Blog](http://182.92.73.238/ "Blog") and ask me anything in the comment section.
+For more information please visit my articles on my [Blog](http://www.gucongrong.cool/ "Blog") and ask me anything in the comment section.
 ## code
 all codes are in this dir
 ### utils
